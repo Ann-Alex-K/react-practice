@@ -30,8 +30,10 @@ const AddBookToSelectionForm = () => {
 
   const onSubmit = () => {
     if (bookId && selectionId) {
+
       dispatch(addBookToSelectionActionCreator(bookId, selectionId));
     } else {
+      
       dispatch(showError('Please select book and selection'));
     }
   };
